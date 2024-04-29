@@ -5,8 +5,11 @@ def calc_bmi(h,w):
     print("The BMI is ",bmi)
     if bmi<18.5:
         print("under weight")
+        return -1
     elif bmi>25.0:
         print("over weight")
+        return 1 
     else:
         print("normal weight")
-calc_bmi(w=57, h=1.73) 
+        return 0
+print(calc_bmi(w=57, h=1.73))
